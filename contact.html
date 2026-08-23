@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Andrew Oliver</title>
+  <meta name="description" content="Get in touch with Andrew Oliver for editorial and brand storytelling projects." />
+  <meta name="theme-color" content="#0a0a0c" />
+  <link rel="canonical" href="https://www.andrewoliver.com/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact — Andrew Oliver" />
+  <meta property="og:description" content="Get in touch for editorial and brand storytelling projects." />
+  <meta property="og:url" content="https://www.andrewoliver.com/contact.html" />
+  <meta property="og:image" content="https://www.andrewoliver.com/assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — Andrew Oliver" />
+  <meta name="twitter:description" content="Get in touch for editorial and brand storytelling projects." />
+  <meta name="twitter:image" content="https://www.andrewoliver.com/assets/og.png" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Andrew Oliver home">
+        <img src="assets/monogram.png" alt="" height="48" />
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Work</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="main">
+    <section class="page-hero">
+      <h1>Contact</h1>
+      <p>Available for brand films, entrepreneur stories, trailers, and sizzle reels.</p>
+    </section>
+    <div class="contact-card">
+      <p style="margin:0;color:var(--fg-dim);font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;">Email</p>
+      <a class="email-link" href="mailto:oliverandy@me.com">oliverandy@me.com</a>
+      <p class="contact-note">Prefer email — include a brief on timeline, deliverables, and references if helpful.</p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Andrew Oliver</p>
+      <p><a href="mailto:oliverandy@me.com">oliverandy@me.com</a></p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const header = document.querySelector(".site-header");
+    const onScroll = () => header.classList.toggle("is-scrolled", window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  </script>
+</body>
+</html>

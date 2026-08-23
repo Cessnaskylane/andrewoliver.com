@@ -1,0 +1,139 @@
+{
+  "site": {
+    "title": "Andrew Oliver",
+    "tagline": "Editor · Brand stories, entrepreneurs, trailers & sizzles",
+    "email": "oliverandy@me.com",
+    "url": "https://www.andrewoliver.com"
+  },
+  "squarespaceLibraryId": "6994751600fee1169e9ab13e",
+  "sections": [
+    {
+      "id": "brand",
+      "title": "Brand Stories",
+      "items": [
+        {
+          "id": "kind",
+          "title": "KIND",
+          "poster": "assets/posters/p01.webp",
+          "duration": 38,
+          "source": {
+            "type": "squarespace-hls",
+            "id": "4eb17e59-1958-4f53-afda-9c8b0562401f"
+          }
+        },
+        {
+          "id": "drybar",
+          "title": "Drybar",
+          "poster": "assets/posters/p02.webp",
+          "duration": 37,
+          "source": {
+            "type": "squarespace-hls",
+            "id": "520473f4-ec41-4587-ab4a-fffb12e4fbce"
+          }
+        },
+        {
+          "id": "scrub-daddy",
+          "title": "Scrub Daddy",
+          "poster": "assets/posters/p03.webp",
+          "duration": 91,
+          "source": {
+            "type": "squarespace-hls",
+            "id": "b27b6e7c-dbe9-43df-98aa-0595eabf2b70"
+          }
+        },
+        {
+          "id": "ring",
+          "title": "Ring",
+          "poster": "assets/posters/p04.webp",
+          "duration": 44,
+          "source": {
+            "type": "squarespace-hls",
+            "id": "1848fbcf-5c2c-4fb0-9d90-d9679a4eb6e9"
+          }
+        }
+      ]
+    },
+    {
+      "id": "entrepreneur",
+      "title": "Entrepreneur Stories",
+      "items": [
+        {
+          "id": "entrepreneur-01",
+          "title": "Entrepreneur Story",
+          "poster": "assets/posters/e01.webp",
+          "duration": 194,
+          "source": {
+            "type": "squarespace-hls",
+            "id": "10e757da-8508-49f9-b636-4aac8f265045"
+          }
+        },
+        {
+          "id": "mark-cuban",
+          "title": "Mark Cuban",
+          "poster": "assets/posters/p05.webp",
+          "duration": 170,
+          "source": {
+            "type": "squarespace-hls",
+            "id": "76fb06c9-d01e-495e-8697-60fa03828186"
+          }
+        },
+        {
+          "id": "richard-branson",
+          "title": "Richard Branson",
+          "poster": "assets/posters/p06.webp",
+          "duration": 114,
+          "source": {
+            "type": "squarespace-hls",
+            "id": "1a8196cc-dbd1-4acd-978b-2314aabebafe"
+          }
+        },
+        {
+          "id": "daymond-john",
+          "title": "Daymond John",
+          "poster": "assets/posters/p07.webp",
+          "duration": 81,
+          "source": {
+            "type": "squarespace-hls",
+            "id": "252d59a8-da5f-4223-b64b-de112817c10a"
+          }
+        },
+        {
+          "id": "kevin-oleary",
+          "title": "Kevin O'Leary",
+          "poster": "assets/posters/p08.webp",
+          "duration": 133,
+          "source": {
+            "type": "squarespace-hls",
+            "id": "1729102d-41cf-4bf1-a2c4-31bc69d925be"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trailers",
+      "title": "Trailers & Sizzles",
+      "items": [
+        {
+          "id": "trailer-01",
+          "title": "Trailer",
+          "poster": "assets/posters/t01.webp",
+          "duration": 186,
+          "source": {
+            "type": "squarespace-hls",
+            "id": "2cdcc76c-3d4b-485c-a442-5c45fe8fbe5b"
+          }
+        },
+        {
+          "id": "red-table-talk",
+          "title": "Red Table Talk",
+          "poster": "assets/posters/p09.webp",
+          "duration": 59,
+          "source": {
+            "type": "squarespace-hls",
+            "id": "b9c0750a-e50a-4f53-b401-70603bacb5f1"
+          }
+        }
+      ]
+    }
+  ]
+}
