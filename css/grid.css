@@ -98,3 +98,7 @@ body.lb-open{overflow:hidden}
 @media (hover:hover) and (pointer:fine) and (min-width:701px) and (max-width:1280px){
  .big .frame img{width:142%}
 }
+.tile.coming{grid-column:1/-1;grid-row:span 2;display:flex;align-items:center;justify-content:center;text-align:center;border:1px solid rgba(239,233,223,.12);background:radial-gradient(ellipse at 50% 45%,#1c1a17,#0d0c0b 70%)}
+.tile.coming[hidden]{display:none}
+.coming h3{font-family:Anton,sans-serif;font-weight:400;font-size:clamp(26px,3vw,40px);letter-spacing:.02em;text-transform:uppercase;color:#efe9df;margin:0 0 12px}
+.coming p{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:rgba(239,233,223,.55);margin:0}
