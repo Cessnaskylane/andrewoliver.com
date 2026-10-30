@@ -81,3 +81,4 @@ body.lb-open{overflow:hidden}
  .lb .close{top:10px;right:10px}
 }
 @media (prefers-reduced-motion:reduce){.frame::after{animation:none}.tile .frame img{transition:none}}
+.frame picture{display:block;width:100%;height:100%}
