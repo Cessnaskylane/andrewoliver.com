@@ -3,55 +3,88 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Andrew Oliver — Editor</title>
-  <meta name="description" content="Andrew Oliver — Editor. Brand stories, entrepreneurs, trailers &amp; sizzles." />
-  <meta name="theme-color" content="#0a0a0c" />
+  <title>Andrew Oliver — Editor · Shark Tank, Brand &amp; Private Films</title>
+  <meta name="description" content="Andrew Oliver — Editor. Shark Tank profiles, brand stories, entrepreneurs, trailers and private family films." />
+  <meta name="theme-color" content="#0a0a0b" />
   <link rel="canonical" href="https://www.andrewoliver.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Andrew Oliver" />
   <meta property="og:title" content="Andrew Oliver — Editor" />
-  <meta property="og:description" content="Brand stories, entrepreneurs, trailers &amp; sizzles." />
+  <meta property="og:description" content="Shark Tank profiles, brand stories, entrepreneurs, trailers and private films." />
   <meta property="og:url" content="https://www.andrewoliver.com/" />
   <meta property="og:image" content="https://www.andrewoliver.com/assets/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Andrew Oliver — Editor" />
-  <meta name="twitter:description" content="Brand stories, entrepreneurs, trailers &amp; sizzles." />
+  <meta name="twitter:description" content="Shark Tank profiles, brand stories, entrepreneurs, trailers and private films." />
   <meta name="twitter:image" content="https://www.andrewoliver.com/assets/og.png" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js" defer></script>
-  <script src="js/main.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/posters/mrbeast-interview.webp" />
+  <link rel="stylesheet" href="css/treatment.css?v=2" />
+  <link rel="stylesheet" href="css/grid.css?v=2" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-title">Andrew Oliver</span>
-        <span class="brand-kicker">Film &amp; brand editor</span>
-      </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html" aria-current="page">Work</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="wrap">
+  <header>
+    <a class="brand" href="index.html">Andrew Oliver<small>Editor — Shark Tank · Brand · Private</small></a>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><i></i><i></i></button>
+    <nav id="nav" aria-label="Primary"><a href="index.html" aria-current="page">Work</a><a href="contact.html">Contact</a><a class="btn" href="contact.html">Work with me</a></nav>
   </header>
-  <main id="main" class="main">
-    <div id="filters" class="filters" role="toolbar" aria-label="Filter work by category"></div>
-    <div id="sections"></div>
+  <div class="filters" role="toolbar" aria-label="Filter work">
+    <button type="button" class="on" data-f="all">All</button><button type="button" data-f="shark">Shark Tank</button><button type="button" data-f="brand">Brand Stories</button><button type="button" data-f="entrepreneurs">Entrepreneurs</button><button type="button" data-f="trailers">Trailers</button><button type="button" data-f="family">Family Films</button>
+  </div>
+  <main id="main" class="grid">
+    <a class="tile big playable" data-cat="shark entrepreneurs" href="https://www.youtube.com/watch?v=N0HIygq5gfM" data-embed="https://www.youtube.com/embed/N0HIygq5gfM" data-ratio="vertical" aria-label="Play MrBeast"><div class="frame letterbox"><img src="assets/posters/mrbeast-interview.webp" alt="MrBeast — still" loading="eager" decoding="async" style="object-position:64% 30%"><div class=bars></div></div><span class="tag">Featured · New</span><span class="yt">▶ Play</span><span class="play" aria-hidden="true"></span><div class="cap"><div><h3>MrBeast</h3><p>Shark Tank · Profile</p></div><span class="t">3:08</span></div></a>
+    <a class="tile new playable" data-cat="shark entrepreneurs" href="https://www.youtube.com/watch?v=Nh1WbSFcGvE" data-embed="https://www.youtube.com/embed/Nh1WbSFcGvE" data-ratio="vertical" aria-label="Play Steven Bartlett"><div class="frame"><img src="assets/posters/bartlett-interview.webp" alt="Steven Bartlett — still" loading="eager" decoding="async" style="object-position:60% 30%"></div><span class="tag">New</span><span class="yt">▶ Play</span><span class="play" aria-hidden="true"></span><div class="cap"><div><h3>Steven Bartlett</h3><p>Shark Tank · Profile</p></div><span class="t">3:38</span></div></a>
+    <a class="tile playable" data-cat="shark entrepreneurs" href="https://www.youtube.com/watch?v=QtPsvq6aPts" data-embed="https://www.youtube.com/embed/QtPsvq6aPts" data-ratio="wide" aria-label="Play Mark Cuban"><div class="frame"><img src="assets/posters/p05.webp" alt="Mark Cuban — still" loading="eager" decoding="async"></div><span class="yt">▶ Play</span><span class="play" aria-hidden="true"></span><div class="cap"><div><h3>Mark Cuban</h3><p>Shark Tank · 15 seasons</p></div><span class="t">2:50</span></div></a>
+    <div class="tile" data-cat="shark entrepreneurs"><div class="frame"><img src="assets/posters/p06.webp" alt="Richard Branson — still" loading="eager" decoding="async"></div><span class="soon">Coming soon</span><div class="cap"><div><h3>Richard Branson</h3><p>Shark Tank · Profile</p></div><span class="t">1:54</span></div></div>
+    <div class="tile" data-cat="shark entrepreneurs"><div class="frame"><img src="assets/posters/p07.webp" alt="Daymond John — still" loading="lazy" decoding="async"></div><span class="soon">Coming soon</span><div class="cap"><div><h3>Daymond John</h3><p>Shark Tank · Profile</p></div><span class="t">1:21</span></div></div>
+    <div class="tile" data-cat="trailers"><div class="frame"><img src="assets/posters/p09.webp" alt="Red Table Talk — still" loading="lazy" decoding="async"></div><span class="soon">Coming soon</span><div class="cap"><div><h3>Red Table Talk</h3><p>Sizzle</p></div><span class="t">0:59</span></div></div>
+    <div class="tile" data-cat="brand shark"><div class="frame"><img src="assets/posters/p03.webp" alt="Scrub Daddy — still" loading="lazy" decoding="async"></div><span class="soon">Coming soon</span><div class="cap"><div><h3>Scrub Daddy</h3><p>Brand story · Shark Tank</p></div><span class="t">1:31</span></div></div>
+    <a class="tile playable" data-cat="brand shark" href="https://www.youtube.com/watch?v=OoeHdQEcV3I" data-embed="https://www.youtube.com/embed/OoeHdQEcV3I" data-ratio="wide" aria-label="Play KIND"><div class="frame"><img src="assets/posters/p01.webp" alt="KIND — still" loading="lazy" decoding="async"></div><span class="yt">▶ Play</span><span class="play" aria-hidden="true"></span><div class="cap"><div><h3>KIND</h3><p>Brand story · Shark Tank</p></div><span class="t">0:38</span></div></a>
+    <div class="tile" data-cat="brand shark"><div class="frame"><img src="assets/posters/p02.webp" alt="Drybar — still" loading="lazy" decoding="async"></div><span class="soon">Coming soon</span><div class="cap"><div><h3>Drybar</h3><p>Brand story</p></div><span class="t">0:37</span></div></div>
+    <a class="tile ext" data-cat="brand shark" href="https://x.com/ABCSharkTank/status/1047927214124163072" target="_blank" rel="noopener" aria-label="Watch Ring on X"><div class="frame"><img src="assets/posters/p04.webp" alt="Ring — still" loading="lazy" decoding="async"></div><span class="yt">▶ Watch on X ↗</span><span class="play" aria-hidden="true"></span><div class="cap"><div><h3>Ring</h3><p>Brand story · Shark Tank</p></div><span class="t">0:44</span></div></a>
+    <div class="tile wide" data-cat="trailers"><div class="frame letterbox"><div class="ph" style="background:radial-gradient(ellipse at 70% 50%,#2c2f33,#121315 60%,#0a0a0b)"><span>Anxiety — Trailer</span></div><div class=bars></div></div><span class="soon">Coming soon</span><div class="cap"><div><h3>Anxiety</h3><p>Trailer</p></div><span class="t">Trailer</span></div></div>
+    <a class="tile mfull" data-cat="family" href="contact.html"><div class="frame"><div class="ph" style="background:radial-gradient(ellipse at 40% 45%,#4a3a2a,#1d1813 65%,#0f0d0b)"><span>Family Films</span></div></div><span class="tag">Private</span><div class="cap"><div><h3>Family Films</h3><p>Private clients · Enquire</p></div><span class="t">→</span></div></a>
   </main>
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p>&copy; <span id="year"></span> Andrew Oliver</p>
-      <p><a href="mailto:oliverandy@me.com">oliverandy@me.com</a></p>
-    </div>
-  </footer>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <a class="mcta" href="contact.html">Work with me</a>
+  <footer><span>&copy; <span id="year">2026</span> Andrew Oliver</span><a href="mailto:oliverandy@me.com">oliverandy@me.com</a></footer>
+</div>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Video player" hidden><button class="close" type="button" aria-label="Close video">&times;</button><div class="stage"></div></div>
+<script>
+(function(){
+  document.getElementById("year").textContent=new Date().getFullYear();
+  var lb=document.getElementById("lb"),stage=lb.querySelector(".stage"),last=null;
+  function close(){stage.innerHTML="";lb.hidden=true;document.body.classList.remove("lb-open");if(last)last.focus();}
+  document.querySelectorAll("a.tile[data-embed]").forEach(function(a){
+    a.addEventListener("click",function(e){
+      e.preventDefault();last=a;
+      lb.classList.toggle("vertical",a.dataset.ratio==="vertical");
+      var f=document.createElement("iframe");
+      f.src=a.dataset.embed+"?autoplay=1&rel=0&playsinline=1&modestbranding=1";
+      f.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      f.allowFullscreen=true;f.title=a.getAttribute("aria-label")||"Video";
+      f.referrerPolicy="strict-origin-when-cross-origin";
+      stage.innerHTML="";stage.appendChild(f);lb.hidden=false;document.body.classList.add("lb-open");lb.querySelector(".close").focus();
+    });
+  });
+  lb.addEventListener("click",function(e){if(e.target===lb||e.target.classList.contains("close"))close();});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!lb.hidden)close();});
+  var bt=document.querySelector(".burger"),nav=document.getElementById("nav");
+  bt.addEventListener("click",function(){var o=nav.classList.toggle("open");bt.setAttribute("aria-expanded",o);});
+  var btns=document.querySelectorAll(".filters button"),tiles=document.querySelectorAll(".grid .tile");
+  btns.forEach(function(b){b.addEventListener("click",function(){
+    btns.forEach(function(x){x.classList.toggle("on",x===b);});
+    var f=b.dataset.f;
+    tiles.forEach(function(t){t.hidden=!(f==="all"||(" "+t.dataset.cat+" ").indexOf(" "+f+" ")>-1);});
+  });});
+})();
+</script>
 </body>
 </html>
