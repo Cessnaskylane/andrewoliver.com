@@ -82,3 +82,9 @@ body.lb-open{overflow:hidden}
 }
 @media (prefers-reduced-motion:reduce){.frame::after{animation:none}.tile .frame img{transition:none}}
 .frame picture{display:block;width:100%;height:100%}
+/* MrBeast hero: no play cue at rest (any device); button + badge appear on hover/keyboard focus */
+.big .play{opacity:0}
+.big .yt{opacity:0;transition:opacity .35s ease}
+.big:hover .play,.big:focus-visible .play,.big:hover .yt,.big:focus-visible .yt{opacity:1}
+.tile.big.playable::after{opacity:0;transition:opacity .35s ease}
+.tile.big.playable:hover::after,.tile.big.playable:focus-visible::after{opacity:1}
