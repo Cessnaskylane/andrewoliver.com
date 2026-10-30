@@ -36,7 +36,7 @@ nav .btn:hover{background:#efe9df;color:#0a0a0b}
 .soon{color:rgba(239,233,223,.8);border:1px solid rgba(239,233,223,.25);background:rgba(0,0,0,.45)}
 .play{position:absolute;z-index:6;top:50%;left:50%;transform:translate(-50%,-50%) scale(.9);width:58px;height:58px;border-radius:50%;border:1px solid rgba(255,255,255,.8);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);background:rgba(0,0,0,.25);opacity:0;transition:opacity .25s,transform .25s}
 .play::after{content:"";border-left:14px solid #fff;border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px}
-.big .play{opacity:1;transform:translate(-50%,-50%);width:72px;height:72px}
+.big .play{opacity:0;transform:translate(-50%,-50%);width:72px;height:72px}
 .tile:hover .play,.tile:focus-visible .play{opacity:1;transform:translate(-50%,-50%)}
 .mcta{display:none;text-decoration:none}
 footer{padding:40px 48px 36px;display:flex;justify-content:space-between;font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
@@ -110,3 +110,8 @@ body.lb-open{overflow:hidden}
  .tile.x-big{grid-column:span 2;grid-row:span 2}
 }
 @media (min-width:701px) and (max-width:1000px){ .tile.t-full{grid-column:1/-1} }
+/* featured tile: no play cue at rest on desktop; badge + button fade in on hover/focus */
+@media (hover:hover) and (pointer:fine) and (min-width:701px){
+ .big .yt{opacity:0;transition:opacity .35s ease}
+ .big:hover .yt,.big:focus-visible .yt{opacity:1}
+}
