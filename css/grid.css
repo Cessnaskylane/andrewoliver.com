@@ -102,14 +102,6 @@ body.lb-open{overflow:hidden}
 .tile.coming[hidden]{display:none}
 .coming h3{font-family:Anton,sans-serif;font-weight:400;font-size:clamp(26px,3vw,40px);letter-spacing:.02em;text-transform:uppercase;color:#efe9df;margin:0 0 12px}
 .coming p{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:rgba(239,233,223,.55);margin:0}
-/* mosaic rhythm: tall tiles from 3 cols up, extra spans only at 4 cols */
-@media (min-width:701px){ .tile.tall{grid-row:span 2} }
-@media (min-width:1001px){
- .tile.x-tall{grid-row:span 2}
- .tile.x-wide{grid-column:span 2;grid-row:span 1}
- .tile.x-big{grid-column:span 2;grid-row:span 2}
-}
-@media (min-width:701px) and (max-width:1000px){ .tile.t-full{grid-column:1/-1} }
 /* featured tile: no play cue at rest on desktop; badge + button fade in on hover/focus */
 @media (hover:hover) and (pointer:fine) and (min-width:701px){
  .big .yt{opacity:0;transition:opacity .35s ease}
