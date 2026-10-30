@@ -82,3 +82,19 @@ body.lb-open{overflow:hidden}
 }
 @media (prefers-reduced-motion:reduce){.frame::after{animation:none}.tile .frame img{transition:none}}
 .frame picture{display:block;width:100%;height:100%}
+/* play buttons: hover/focus reveal on desktop, small corner badge on touch */
+.play{transition:opacity .35s ease,transform .35s ease}
+@media (hover:hover) and (pointer:fine){
+ .big .play{opacity:0}
+ .tile:hover .play,.tile:focus-visible .play,.big:hover .play,.big:focus-visible .play{opacity:1}
+}
+@media (hover:none){
+ .play{display:none}
+ .tile.playable::after,.tile.ext::after{content:"";position:absolute;z-index:7;right:10px;bottom:10px;width:26px;height:26px;border-radius:50%;border:1px solid rgba(255,255,255,.75);background:rgba(0,0,0,.35) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'><path d='M10 8l8 5-8 5z' fill='white'/></svg>") center/26px no-repeat}
+}
+@media (hover:hover) and (pointer:fine) and (min-width:701px){
+ .big .frame img{width:132%;max-width:none}
+}
+@media (hover:hover) and (pointer:fine) and (min-width:701px) and (max-width:1280px){
+ .big .frame img{width:142%}
+}
