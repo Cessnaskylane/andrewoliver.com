@@ -93,3 +93,21 @@ body.lb-open{overflow:hidden}
  .grid>.tile.big,.grid>.tile[aria-label="Play Steven Bartlett"]{order:-2}
  .grid>.tile[aria-label="Watch Shark Tank Season 15 Supertease on IMDb"]{order:-1}
 }
+
+/* B — Light sweep: a soft glint of light glides across the letters once every ~6s */
+.brand .bn{position:relative;display:inline-block}
+.brand .bn::after{
+  content:attr(data-text);position:absolute;inset:0;pointer-events:none;
+  color:#fff;text-shadow:0 0 10px rgba(255,232,200,.55),0 0 2px rgba(255,255,255,.7);
+  -webkit-mask-image:linear-gradient(105deg,transparent 0 40%,#000 50%,transparent 60% 100%);
+          mask-image:linear-gradient(105deg,transparent 0 40%,#000 50%,transparent 60% 100%);
+  -webkit-mask-size:300% 100%;mask-size:300% 100%;
+  -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
+  -webkit-mask-position:100% 0;mask-position:100% 0;
+  animation:ao-sweep 6s cubic-bezier(.45,0,.25,1) 1s infinite;
+}
+@keyframes ao-sweep{
+  0%{-webkit-mask-position:100% 0;mask-position:100% 0}
+  28%,100%{-webkit-mask-position:0 0;mask-position:0 0}
+}
+@media (prefers-reduced-motion:reduce){.brand .bn::after{display:none}}
