@@ -90,7 +90,7 @@ body.lb-open{overflow:hidden}
 .tile.big.playable:hover::after,.tile.big.playable:focus-visible::after{opacity:1}
 /* Mobile only: Season 15 Supertease sits directly below Steven Bartlett (desktop order unchanged) */
 @media (max-width:700px){
- .grid>.tile.big,.grid>.tile[aria-label="Play Steven Bartlett"]{order:-2}
+ .grid>.tile.big,.grid>.tile[aria-label="Play Ring"]{order:-2}
  .grid>.tile[aria-label="Watch Shark Tank Season 15 Supertease on IMDb"]{order:-1}
 }
 
